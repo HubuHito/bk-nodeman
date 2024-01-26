@@ -38,11 +38,22 @@ import { defineComponent, toRefs } from 'vue';
 
 export default defineComponent({
   props: {
-    item: () => ({}),
-    itemIndex: -1,
-    value: () => ({}),
-    valueProp: '',
-    labelWidth: 110,
+    item: {
+      type: Object,
+      default: () => ({}),
+    },
+    itemIndex: {
+      type: Number,
+      default: -1,
+    },
+    value: {
+      type: Object,
+      default: () => ({}),
+    },
+    valueProp: {
+      type: String,
+      default: '',
+    },
   },
   setup(props) {
     return {

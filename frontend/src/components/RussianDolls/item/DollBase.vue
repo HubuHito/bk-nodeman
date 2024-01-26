@@ -22,12 +22,26 @@ import { defineComponent, inject, toRefs } from 'vue';
 
 export default defineComponent({
   props: {
-    item: () => ({}),
-    schema: () => ({}),
-    itemIndex: -1,
-    value: '',
-    valueProp: '',
-    labelWidth: 110,
+    item: {
+      type: Object,
+      default: () => ({}),
+    },
+    schema: {
+      type: Object,
+      default: () => ({}),
+    },
+    itemIndex: {
+      type: Number,
+      default: -1,
+    },
+    value: {
+      type: String,
+      default: '',
+    },
+    valueProp: {
+      type: String,
+      default: '',
+    },
   },
   setup(props) {
     const updateFormData = inject('updateFormData');
