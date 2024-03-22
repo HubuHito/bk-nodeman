@@ -15,7 +15,7 @@
           :value="option"
           :value-prop="getRealProp(valueProp, index)"
           :label-width="110" />
-        <i class="array-content-delete nodeman-icon nc-delete-2 ml10" @click.stop="() => deleteItem(index)"></i>
+        <i class="array-content-delete nodeman-icon nc-delete-2 ml10" @click.stop="() => deleteItem(index)" />
       </div>
       <div class="array-content-add" @click.stop="() => addItem(value.length - 1)">
         <i class="nodeman-icon nc-plus"></i>
