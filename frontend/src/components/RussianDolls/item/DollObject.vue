@@ -2,7 +2,7 @@
   <!-- <component is> -->
   <div class="item-object">
     <DollIndex
-      v-for="child in item.children"
+      v-for="child in (item.children || [])"
       :key="child.id"
       :item="child"
       :item-index="itemIndex"

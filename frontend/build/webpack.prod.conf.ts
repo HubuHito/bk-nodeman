@@ -16,6 +16,7 @@ import ReplaceCssStaticUrl from './replace-css-static-url-plugin'
 
 const prodConf = merge(baseConf, {
     mode: 'production',
+    devtool: 'source-map',
     entry: {
         main: './src/main.ts'
     },
